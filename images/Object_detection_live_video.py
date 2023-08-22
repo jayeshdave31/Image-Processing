@@ -48,7 +48,7 @@ while True:
             cv2.rectangle(image, (upper_left_x, upper_left_y), (lower_right_x, lower_right_y), colours[class_index], 3)
             cv2.putText(image, pridiction_text, (upper_left_x , upper_left_y -15 if upper_left_y > 30 else upper_left_y + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.6, colours[class_index], 2)
 
-    cv2.imshow("Detected objects", image)
-    cv2.waitKey(6)
+            cv2.imshow("Detected objects", image)
+            cv2.waitKey(6)
 cv2.destroyAllWindows()
-cap.release()
+cam.release()
